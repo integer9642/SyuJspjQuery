@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> animation </title>
+<style>
+	.reverse{
+		color : white;
+		background-color : purple;
+	}
+</style>
+<script src="c:\jQuery\jQuery-3.5.1.js"></script><script>
+	$(document).ready(function(){
+		$('div').hover(function(){
+			$(this).addClass('reverse',1000);
+	}, function(){
+		$(this).removeClass('reverse',1000);
+	});
+	});
+	</script>
+	</head>
+	<body>
+		<div>
+			<h1>삼육대학교</h1>
+			<p>Web Programming</p></div>
+		<div>
+			<h1>삼육대학교</h1>
+			<p>Web Programming</p></div>
+		<div>
+			<h1>삼육대학교</h1>
+			<p>Web Programming</p></div>
+	</body>
+	</html>

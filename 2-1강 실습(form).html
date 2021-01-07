@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html><head><title>form 구성</title></head>
+<body>
+	<form name="frm" method="post" action="">
+		이름 : <input type="text" size=40 value="당신의 이름은?"><br>
+		비밀번호 : <input type="password" maxlength=6><br>
+		좋아하는 과목 선택
+		<input type = "checkbox" name="subjet" value="국어"> 국어
+		<input type = "checkbox" name="subjet" value="영어"> 영어
+		<input type = "checkbox" name="subjet" value="수학"> 수학
+		<input type = "checkbox" name="subjet" value="역사"> 역사
+		<input type = "checkbox" name="subjet" value="지리"> 지리
+		<br>
+		<input type = "radio" name="title" value="Korean"> Korean
+		<input type = "radio" name="title" value="English"> English
+		<input type = "radio" name="title" value="Math"> Math
+		<input type = "radio" name="title" value="history"> history
+		<input type = "radio" name="title" value="Geographic" checked> Geographic
+		<br>
+
+		도시 <select name="city" size=3 multiple="3">
+			<option selected>서울</option>
+			<option>부산</option>
+			<option>대구</option>
+			<option selected>제주</option>
+			<option>광주</option>
+		</select>
+		<br><br>
+		자기소개서<br>
+		<textarea name="me" cols=80 rows=10>
+			자기 소개를 간단히 입력하세요.
+		</textarea>
+		<br>
+		<br>
+		<input type="submit" value="저장">&nbsp;
+		<input type="reset" value="취소">
+	</form>
+</body>
+</html>

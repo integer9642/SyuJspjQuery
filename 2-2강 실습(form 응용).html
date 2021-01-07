@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html><head><title>form Application</title></head>
+<body>
+	<h3> 폼 연결하기 </h3>
+	<form name="frm" method="post" action="">
+	<fieldset>
+		<legend>로그인 정보</legend>
+		아 이 디 : <input type="text" name="id" size=20><br>
+		이 메 일 : <input type="text" name="email" size=20><br>
+		패스워드 : <input type="password" name="pw" maxlength=6 size=20><br>
+	</fieldset>
+
+	<fieldset>
+		<legend>개인정보</legend>
+		<label for name="이름">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 :</label>
+		<input type="text" name="name" size="20"><br>
+		<label for name="생년월일">생년월일 :</label>
+		<input type="text" name="birth" size="20"><br>
+	</fieldset>
+
+	<fieldset>
+		<legend>신상정보</legend>
+		<label for name="sex">성별</label>
+			<input type="radio" name="sex" value="여"> 여성
+			<input type="radio" name="sex" value="남"> 남성<br>
+			<label for name="hobby">취미</label>
+			<input type="checkbox" name="hobby" value="reading"> 독서
+			<input type="checkbox" name="hobby" value="swimming"> 수영
+			<input type="checkbox" name="hobby" value="movie"> 영화감상
+			<input type="checkbox" name="hobby" value="traveling"> 여행
+	</fieldset><br>
+
+	<fieldset>
+		<legend>소속</legend>
+		<select for name="dept" size=5>
+		<option>보건관리학과</option>
+		<option>컴퓨터공학과</option>
+		<option>간호학과</option>
+		<option>상담심리학과</option>
+		<option>IT융합공학과</option>
+	</select>	
+	</fieldset><br>
+
+	<fieldset>
+		<legend>장점</legend>
+		<label for name="취미">취미</label>
+		<input type="text" name="hby" list="hbylist"></br>
+		<datalist id="hbylist">
+			<option value="낚시">낚시</option>
+			<option value="등산">등산</option>
+			<option value="서핑">서핑</option>
+			<option value="하이킹">하이킹</option>
+		</datalist>
+	</fieldset>
+	<input type="submit" value="가입하기">&nbsp;<input type="reset" value="취소">
+	<button type="submit">가입하기</button>&nbsp;<button type="reset">취소</button>
+</form>
+</body>
+</html>

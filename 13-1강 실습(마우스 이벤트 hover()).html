@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.reverse {
+background: blue;
+color: yellow;
+}
+</style>
+<script src="c:\jQuery\jQuery-3.5.1.js"></script>
+<script>
+$(document).ready(function () {
+// 이벤트를 연결합니다.
+$('h1').hover(function () {
+$(this).addClass('reverse');
+}, function () {
+$(this).removeClass('reverse');
+});
+});
+</script>
+</head>
+<body>
+<h1>삼육사랑, 삼육대학교</h1>
+<h1>삼육사랑, 삼육대학교</h1>
+<h1>삼육사랑, 삼육대학교</h1>
+</body>
+</html>

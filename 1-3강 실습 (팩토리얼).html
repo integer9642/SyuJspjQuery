@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><title>Function Test</title>
+<script type = "text/javascript">
+function fact(num){
+	var ret=1;
+	for(i=num;i>=1;i--)
+		ret*=i;		//ret=ret*i
+
+	return ret;
+}
+</script>
+</head>
+<body>
+	
+<script>
+	var num=parseInt(prompt("팩토리얼 값을 입력하세요 : ",""));
+	var result=fact(num);
+	document.write(num+"! 값은"+result);
+</script>
+
+</body>
+</html>

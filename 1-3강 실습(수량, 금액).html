@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><title>Function Test</title>
+<script type = "text/javascript">
+function order(pum,qty){
+	var price =0;
+	var unit;
+	switch(pum){
+		case "새우깡" :
+			unit = 2000;
+			break;
+		case "에이스" :
+			unit = 3000;
+			break;
+		case "초코파이" :
+			unit = 4000;
+			break;
+		default :
+			document.write("해당 품목이 없음~");
+			break;
+	}
+		price=unit*qty;
+		return price;
+	}
+</script>
+</head>
+<body>
+	
+<script>
+	var pum=prompt("품명 : ","");
+	var qty=parseInt(prompt("수량 : ",""));
+	var amount = order(pum,qty); //함수 호출
+	document.write("구입한 과자명은"+pum+"이며, 수량은"+qty+"개이며 구입 금액은"+amount+"원 입니다.")
+</script>
+
+</body>
+</html>

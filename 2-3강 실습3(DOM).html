@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head><title>파일 이름 속성 알아보기</title>
+<script>
+	function myFunction(){
+		var f =document.getElementById("upload").files[0];
+		var fileSize = f.size;
+		var fileName = f.name;
+		var fileType = f.type;
+
+		document.getElementById("fileName").innerHTML = fileName;
+		document.getElementById("fileSize").innerHTML = fileSize;
+		document.getElementById("fileType").innerHTML = fileType;
+	}
+	function sum(a,b){
+		var sum = a+b;
+		return sum;
+	}
+	</script>
+</head>
+<body><p>
+	<form name="frm" method="post" action="">
+		<input id="upload" type="file" name="myFiles" onChange="myFunction();"><p>
+	</form><p>
+	
+	<b><font size=5 color=blue>선택된 파일 정보<p></p></font>
+파일 이름: <span id="fileName"></span><br>
+파일 크기: <span id="fileSize"></span><br>
+파일 타입: <span id="fileType"></span><br>
+</body>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
